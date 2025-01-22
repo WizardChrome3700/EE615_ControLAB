@@ -28,8 +28,9 @@
 #define motorRED 9
 #define motorBLACK 8
 
-float k[] = {31.62, -1398.06, 27.48, -118.45};
+float k[] = {35.48, -1415.60, 29.27, -114.57};
 // {31.62, -1398.06, 27.48, -118.45}; first good response
+// {35.48, -1415.60, 29.27, -114.57} 2nd good response better theta coverage and lasted much longer
 void setup()
 {
   //Set the modes for the SPI IO
