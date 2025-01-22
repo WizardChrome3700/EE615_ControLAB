@@ -28,8 +28,8 @@
 #define motorRED 9
 #define motorBLACK 8
 
-float k[] = {10.0000, -642.1268,   200.2716,  -49.1591};
-
+float k[] = {31.62, -1398.06, 27.48, -118.45};
+// {31.62, -1398.06, 27.48, -118.45}; first good response
 void setup()
 {
   //Set the modes for the SPI IO
