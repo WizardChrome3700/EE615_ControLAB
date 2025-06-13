@@ -132,6 +132,12 @@ void loop()
             Serial.print(alpha_dot);
             Serial.print(", theta_dot: ");
             Serial.println(theta_dot);
+            if(control_input > 255.0) {control_input = 255.0;}
+            if(control_input < -255.0) {control_input = -255.0;}
+            float motor_plus_value = (128.0 + (control_input)/2);
+            float motor_minus_value = (128.0 - (control_input)/2);
+            analogWrite(motor_plus_pin, motor_plus_value);
+            analogWrite(motor_minus_pin, motor_minus_value);
             alpha_prev = alpha;
             theta_prev = theta;
           }
